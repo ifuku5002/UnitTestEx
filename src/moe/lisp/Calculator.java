@@ -20,20 +20,30 @@ public class Calculator {
      * @return a, b, cの最大値
      */
     public int max(int a, int b, int c) {
-        int x;
-        if (a > b) {
-            if (b > c) {
-                x = a;
-            } else {
-                x = c;
-            }
-        } else {
-            if (b > c) {
-                x = b;
-            } else {
-                x = c;
-            }
+//        int x;
+//        if (a > b) {
+//            if (b > c) {
+//                x = a;
+//            } else {
+//                x = c;
+//            }
+//        } else {
+//            if (b > c) {
+//                x = b;
+//            } else {
+//                x = c;
+//            }
+//        }
+        
+        int x = a;
+        if (x < b) {
+            x = b;
         }
+        if (x < c) {
+            x = c;
+        }
+        
         return x;
+
     }
 }
